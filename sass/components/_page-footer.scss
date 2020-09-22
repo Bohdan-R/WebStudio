@@ -1,0 +1,28 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A;
+}
+
+.footer__container {
+    @extend %container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.address__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo--footer {
+    display: inline-block;
+
+    margin-bottom: 20px;
+    padding: 0;
+
+    color: #FFFFFF;
+}

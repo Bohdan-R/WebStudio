@@ -1,0 +1,191 @@
+.header__container {
+    @extend %container;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+}
+
+
+.logo {
+    @extend %logo;
+
+    display: block;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.logo__accent {
+    color: $accent-color;
+}
+
+.nav {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    border-top: 1px solid #ECECEC;
+    background-color: $background-card;
+
+    transition: opacity 250ms $transition-function;
+
+    &.is-open {
+        display: block;
+    }
+}
+
+.nav__site {
+    width: 99px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+}
+
+.nav__item {
+    display: flex;
+    justify-content: center;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+.nav__link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $black-text-color;
+
+    transition: color 250ms $transition-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.nav__link--current {
+    color: $accent-color;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 4px;
+
+        background-color: $accent-color;
+        border-radius: 2px;
+    }
+}
+
+.nav__contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-decoration: none;
+    color: $primary-text-color;
+
+    transition: color 250ms $transition-function;
+
+    &:first-child {
+        margin-bottom: 16px;
+    }
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.contact__icon {
+    fill: $primary-text-color;
+    margin-right: 10px;
+
+    transition: fill 250ms $transition-function;
+
+    .contact__link:hover &,
+    .contact__link:focus & {
+        fill: $accent-color;
+    }
+}
+
+.button-menu {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    background-color: $background-card;
+
+    &:focus {
+        padding: 0;
+
+    }
+}
+
+.button-menu__icon-open {
+    display: block;
+
+    transition: fill 250ms $transition-function;
+
+    .button-menu:hover &,
+    .button-menu:focus & {
+        fill: $accent-color;
+    }
+
+    .button-menu.is-open & {
+        display: none;
+    }
+}
+
+.button-menu__icon-close {
+    display: none;
+
+    transition: fill 250ms $transition-function;
+
+    .button-menu:hover &,
+    .button-menu:focus & {
+        fill: $accent-color;
+    }
+
+    .button-menu.is-open & {
+        display: block;
+    }
+
+}
