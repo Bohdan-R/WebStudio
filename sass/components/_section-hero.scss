@@ -1,0 +1,36 @@
+.hero {
+    background-color: #C4C4C4;
+}
+
+.hero__container {
+    padding: 118px 60px;
+
+    @media screen and (min-width:480px) {
+        width: 480px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.hero__title {
+    margin-bottom: 30px;
+
+    color: $secondary-text-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero__button {
+    @extend %button;
+    display: block;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-decoration: none;
+    text-align: center;
+}
