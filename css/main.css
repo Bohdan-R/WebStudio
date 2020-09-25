@@ -655,6 +655,8 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .client__item {
     width: calc((100% - 2 * 30px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
   .client__item:nth-child(3n) {
     margin-right: 0;
