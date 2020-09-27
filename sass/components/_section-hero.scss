@@ -11,7 +11,7 @@
     padding-left: 60px;
     padding-right: 60px;
 
-    background-image: url(../images/hero/Header-mob1x.jpg);
+    background-image: url(../../images/hero/Header-mob1x.jpg);
     background-color: #C4C4C4;
     background-size: cover;
 
@@ -19,7 +19,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
 
-        background-image: url(../images/hero/Header-mob2x.jpg);
+        background-image: url(../../images/hero/Header-mob2x.jpg);
     }
 
     @media screen and (min-width:480px) and (max-width:767px) {
@@ -28,13 +28,13 @@
 
     @media screen and (min-width:768px) and (max-width:1199px) {
         width: 768px;
-        background-image: url(../images/hero/Header-tablet1x.jpg);
+        background-image: url(../../images/hero/Header-tablet1x.jpg);
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
 
-            background-image: url(../images/hero/Header-tablet2x.jpg);
+            background-image: url(../../images/hero/Header-tablet2x.jpg);
         }
     }
 
@@ -42,14 +42,14 @@
         max-width: 1600px;
         height: 600px;
 
-        background-image: url(../images/hero/Header-desktop1x.jpg);
+        background-image: url(../../images/hero/Header-desktop1x.jpg);
         background-position: center;
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
 
-            background-image: url(../images/hero/Header-desktop2x.jpg);
+            background-image: url(../../images/hero/Header-desktop2x.jpg);
         }
     }
 
