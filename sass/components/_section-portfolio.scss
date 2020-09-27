@@ -45,7 +45,8 @@
     line-height: 1.62;
     letter-spacing: 0.03em;
     text-align: center;
-
+    
+    cursor: pointer;
     transition: 250ms $transition-function;
 
     &:hover,
