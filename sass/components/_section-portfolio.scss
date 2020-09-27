@@ -116,6 +116,43 @@
     text-decoration: none;
 }
 
+.project__img-box {
+    position: relative;
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.project__float-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: -1;
+
+    width: 100%;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transition: transform 250ms $transition-function;
+
+    .project__card:hover & {
+        transform: translateY(-100%);
+    }
+
+
+}
+
+.project__float-box__text {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.56;
+
+    color: $secondary-text-color;
+}
 
 .project__content-box {
     padding-top: 20px;

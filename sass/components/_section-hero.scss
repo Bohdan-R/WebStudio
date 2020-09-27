@@ -1,15 +1,58 @@
-.hero {
-    background-color: #C4C4C4;
-}
-
 .hero__container {
-    padding: 118px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    @media screen and (min-width:480px) {
-        width: 480px;
-        margin-right: auto;
-        margin-left: auto;
+    height: 400px;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    background-image: url(../../images/hero/Header-mob1x.jpg);
+    background-color: #C4C4C4;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+
+        background-image: url(../../images/hero/Header-mob2x.jpg);
     }
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 768px;
+        background-image: url(../../images/hero/Header-tablet1x.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+
+            background-image: url(../../images/hero/Header-tablet2x.jpg);
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width: 1600px;
+        height: 600px;
+
+        background-image: url(../../images/hero/Header-desktop1x.jpg);
+        background-position: center;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+
+            background-image: url(../../images/hero/Header-desktop2x.jpg);
+        }
+    }
+
 }
 
 .hero__title {
@@ -21,7 +64,6 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .hero__button {
@@ -32,5 +74,4 @@
     margin-left: auto;
 
     text-decoration: none;
-    text-align: center;
 }
